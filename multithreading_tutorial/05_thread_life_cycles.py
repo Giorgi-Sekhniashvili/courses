@@ -24,6 +24,8 @@ if __name__ == '__main__':
     time.sleep(0.5)
 
     print('waiting for the sub_thread to finish')
+    print(my_sub_thread.is_alive())
     my_sub_thread.join()
+    print(my_sub_thread.is_alive())
 
     print('both done')
