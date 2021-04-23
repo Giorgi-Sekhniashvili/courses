@@ -7,3 +7,7 @@
     table-layout: fixed;
     font-size: 80px;
 }
+
+.container {
+    margin-top: 15px;
+}

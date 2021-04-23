@@ -40,7 +40,7 @@ function win_condition(){
             console.log(`${current_player} won!!!`)
             return true
         }
-        if(spaces[4]===current_player && spaces[7]===current_player){
+        if(spaces[4]===current_player && spaces[8]===current_player){
             console.log(`${current_player} won!!!`)
             return true
         }
@@ -63,7 +63,7 @@ function win_condition(){
             console.log(`${current_player} won!!!`)
             return true
         }
-    }else if(spaces[2] ===current_player) {
+    }else if(spaces[2] === current_player) {
         if (spaces[4] === current_player && spaces[6] === current_player) {
             console.log(`${current_player} won!!!`)
             return true
@@ -89,7 +89,7 @@ function clicks(){
         this.textContent = current_player
         this.style.color = get_color(current_player)
         if (win_condition()){
-            wining_text.textContent = `_ ${current_player} _ Has WON!`
+            wining_text.textContent = `"${current_player}"  has WON!`
             return
         }
         current_player = updatePlayer(current_player)
