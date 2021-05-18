@@ -23,10 +23,10 @@ class VGG(torch.nn.Module):
         )
 
     def forward(self, inp: torch.Tensor):
-        x = self.conv_layers(inp)
-        out = self.fc(x)
+        inp = self.conv_layers(inp)
+        output = self.fc(inp)
 
-        return out
+        return output
 
     def create_conv_layers(self, architecture):
         layers = []
@@ -51,4 +51,3 @@ if __name__ == '__main__':
     model = VGG(in_channels=3, num_classes=10)
     print(model)
     out = model(x)
-
