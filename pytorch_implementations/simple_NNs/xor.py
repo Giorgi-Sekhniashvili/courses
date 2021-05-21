@@ -23,6 +23,7 @@ if __name__ == '__main__':
 
     epochs = 10000
     model.train()
+
     for i in range(epochs):
         outputs = model(data)
 
@@ -30,10 +31,6 @@ if __name__ == '__main__':
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-
-        # print(loss)
-        if i % 1000 == 0:
-            print(loss)
 
     model.eval()
     out = model(data)
