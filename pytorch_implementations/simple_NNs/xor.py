@@ -34,4 +34,5 @@ if __name__ == '__main__':
 
     model.eval()
     out = model(data)
+    print(out)
 
