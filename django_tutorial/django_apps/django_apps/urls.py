@@ -19,5 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('video_stream/', include('apps.video_stream.urls'))
+    path('video_stream/', include('apps.video_stream.urls')),
+    path('to_do/', include('apps.to_do.urls'))
 ]
