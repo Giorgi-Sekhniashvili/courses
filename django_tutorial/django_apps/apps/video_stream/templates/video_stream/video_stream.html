@@ -8,7 +8,11 @@
 {% block main_content %}
     <div class="container">
         <h1>wohoo</h1>
-        <img src="{% url 'video_stream:video_stream_back' %}" id="myImg">
+        <div class="img_with_button">
+            <img src="{% url 'video_stream:video_stream_back' %}" id="myImg">
+            <button class="expand-button btn btn-outline-secondary"><i class="fas fa-expand"></i></button>
+        </div>
+
         <!-- The Modal -->
         <div id="myModal" class="modal">
 

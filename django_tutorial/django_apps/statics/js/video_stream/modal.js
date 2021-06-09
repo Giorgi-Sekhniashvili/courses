@@ -1,13 +1,17 @@
+console.log('wohoo')
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
+var expandButton = document.getElementsByClassName('expand-button')[0];
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function () {
+
+expandButton.onclick = function () {
+    console.log('clicked')
     modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
 }
 
 // Get the <span> element that closes the modal

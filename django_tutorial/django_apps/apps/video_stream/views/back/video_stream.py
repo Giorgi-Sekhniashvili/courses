@@ -31,6 +31,7 @@ class VideoReader(object):
     def update(self):
         while True:
             (self.grabbed, self.frame) = self.video.read()
+            self.frame = cv2.flip(self.frame, 1)
             if self.grabbed:
                 frame = self.get_frame()
                 yield (b'--frame\r\n'
