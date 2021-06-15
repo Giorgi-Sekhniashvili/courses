@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
     'apps.video_stream',
     'apps.to_do'
 ]
@@ -124,3 +125,6 @@ STATIC_URL = '/statics/'
 STATICFILES_DIRS = [
     'statics',
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media'
